@@ -1,0 +1,89 @@
+:root {
+    --bg: #f5f5f7;
+    --card: #fff;
+    --accent: #2c7;
+    --text: #ffffff;
+    --muted: #666;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+    background-image: url('../img/coffee-shop.jpg');
+    background-size: cover;       /* makes the image cover the whole screen */
+    background-position: center;  /* centers the image */
+    background-repeat: no-repeat; /* prevents tiling */
+}
+
+.container {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+   
+}
+
+.card {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 8px 20px rgba(12, 20, 30, 0.06);
+    background: #1f2937;
+}
+
+.auth-card {
+    text-align: center
+}
+
+.auth-card h1 {
+    margin-bottom: 6px;
+   
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 12px
+}
+
+.form input,
+.form select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px
+}
+
+.form button {
+    padding: 10px;
+    border-radius: 8px;
+    border: 0;
+    background: #2c7be5;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    background: #10b981;
+}
+
+.hidden {
+    display: none
+}
+
+.muted {
+    color: var(--muted);
+    font-size: 13px
+}
+
+a:hover {
+    color: #2c7be5;
+    text-decoration: none
+}

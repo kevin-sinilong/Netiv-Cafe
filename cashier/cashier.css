@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+   
+    
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+    color: white;
+    background-image: url('../img/coffee-shop.jpg');
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+   
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background:#1f2937;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    
+    
+}
+
+
+.main {
+    display: flex;
+    gap: 18px;
+    padding: 18px;
+   
+}
+
+.menu {
+    width: 700px;
+    background: rgba(0, 0, 0, 0.764);
+    padding: 12px;
+    border-radius: 8px
+    
+}
+
+.menu h3 {
+    margin-top: 0;
+    
+}
+
+.product-item {
+    padding: 8px;
+    border-bottom: 1px solid #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.product-image {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid #10b981;
+    flex-shrink: 0;
+}
+
+.product-image-placeholder {
+    width: 45px;
+    height: 45px;
+    background: #374151;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    color: #9ca3af;
+    flex-shrink: 0;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-item button {
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: 1px solid black;
+    background: #10b981;
+    color: white;
+    cursor: pointer
+}
+
+.pos {
+    flex: 1;
+    border-radius: 8px;
+    background: white;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.764);
+   
+}
+
+.card {
+    min-height: 120px;
+    padding: 12px;
+    border-radius: 8px
+}
+
+.card.empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px dashed #ffffff;
+    gap: 10px;
+}
+
+.cart-item-image {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid #10b981;
+    flex-shrink: 0;
+}
+
+.cart-item-image-placeholder {
+    width: 35px;
+    height: 35px;
+    background: #374151;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.cart-item-details {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remove-btn {
+    background: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row.checkout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    opacity: 0.9;
+}
+
+.row.checkout input {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #000000
+}
+
+.row.checkout button {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid black;
+    background: #10b981;
+    color: rgb(255, 255, 255)
+    
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.35)
+}
+ 
+
+.modal-card {
+    background: rgba(0, 0, 0, 0.803);
+    padding: 16px;
+    border-radius: 8px;
+    width: 600px
+}
+
+.hidden {
+    display: none
+}
+#open-orders{
+     border-radius: 6px;
+     background: #10b981;
+     color:#ffffff;
+     padding: 10px;
+     border-radius: 1px solid black;
+}
+#logout{
+    border-radius: 6px;
+     background: #ff0000;
+     color:#ffffff;
+     padding: 10px;
+     border-radius: 1px solid black;
+}
